@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class M_Buku extends CI_Model{
+class MBuku extends CI_Model{
     private $table = "buku";
     
     function getBuku(){        

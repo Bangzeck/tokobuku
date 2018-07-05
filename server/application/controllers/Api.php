@@ -6,22 +6,22 @@ class Api extends REST_Controller {
 
     function __construct($config = 'rest') {
         parent::__construct($config);
-        //untuk memuat model M_buku.php agar dapat dipakai di controller ini
-        $this->load->model(array('m_buku'));
+        //untuk memuat model MBuku.php agar dapat dipakai di controller ini
+        $this->load->model(array('MBuku'));
     }
 
     //Menampilkan data buku
     function buku_get() {
         $id = $this->get('id_buku');
         if ($id == '') {
-            $buku = $this->m_buku->getBuku();
+            $buku = $this->MBuku->getBuku();
         } else {
-            $buku = $this->m_buku->getBukuById($id);
+            $buku = $this->MBuku->getBukuById($id);
         }
         $this->response($buku, 200);
     }
     
-    //Mengubah data produk
+    //Mengubah data buku
 	function buku_post() {
         //mengambil ID yang dikirim melalui method post
         $id = $this->post('id_buku');
@@ -36,7 +36,7 @@ class Api extends REST_Controller {
         );
         
         //proses update data ke dalam database
-        $update = $this->m_buku->updateBuku($id_buku,$data);
+        $update = $this->MBuku->updateBuku($id_buku,$data);
         //pengecekan apakah proses update berhasil atau tidak
         if ($update) {
             $this->response($data, 200);
@@ -45,7 +45,7 @@ class Api extends REST_Controller {
         }
     }
     
-    //Menambah data produk
+    //Menambah data buku
 	function buku_put() {
         //mengambil data yang dikirim melalui method put
         $data = array(
@@ -57,7 +57,7 @@ class Api extends REST_Controller {
                 'deskripsi'  => $this->put('deskripsi')
         );
         //proses insert data ke dalam database
-        $insert = $this->m_buku->insertBuku($data);
+        $insert = $this->MBuku->insertBuku($data);
 
         //pengecekan apakah proses insert berhasil atau tidak
         if ($insert) {
@@ -67,12 +67,12 @@ class Api extends REST_Controller {
         }
     }
     
-    //Menghapus salah satu data produk
+    //Menghapus salah satu data buku
 	function buku_delete() {
         //mengambil data ID yang dikirim melalui method post
         $id = $this->delete('id_buku');
         //proses delete data dari database
-        $delete = $this->m_buku->deleteBuku($id_buku);
+        $delete = $this->MBuku->deleteBuku($id_buku);
 
         //pengecekan apakah proses delete berhasil atau tidak
         if ($delete) {
