@@ -1,0 +1,3 @@
+Alamat-alamat di tokobuku.
+
+$config['base_url'] = 'http://localhost/server/';
