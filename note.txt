@@ -1,3 +1,9 @@
 Alamat-alamat di tokobuku.
 
 $config['base_url'] = 'http://localhost/server/';
+
+
+Fitur-fitur tokobuku
+
+- Login (Admin)
+- Login (Member/Pembeli)

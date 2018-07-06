@@ -52,7 +52,7 @@ class Api extends REST_Controller {
                 'judul'      => $this->put('judul'),
                 'pengarang'  => $this->put('pengarang'),
                 'penerbit'   => $this->put('penerbit'),
-                'harga'      => $this->put('gambar'),
+                'gambar'      => $this->put('gambar'),
                 'harga'      => $this->put('harga'),
                 'deskripsi'  => $this->put('deskripsi')
         );
