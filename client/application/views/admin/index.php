@@ -23,10 +23,13 @@
          if (isset($_GET['user'])) {
             echo $user;
          }
-         else{
+         else if(isset($_GET['listBuku'])){
+            echo $listBuku;
+         }else{
             echo $home;
          }
-         
+    
+        
     ?>
   
    <div class="col-md-12" style="background:#1682ba;padding:8px;color:#fff;"></div>

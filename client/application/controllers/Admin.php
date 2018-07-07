@@ -8,7 +8,14 @@ class Admin extends CI_Controller {
 		$adm = array(
 			"user" => $this->load->view("admin/user",array(),true),
 			"home" => $this->load->view("admin/home",array(),true),
+			"listBuku" => $this->load->view("admin/listBuku",array(),true),
 	);
 		$this->load->view("admin/index",$adm);
+	}
+
+
+	public function login(){
+
+		$this->load->view("admin/login");
 	}
 }
