@@ -55,7 +55,7 @@
     <!-- Content area -->
 
     <!-- ISI KONTEN -->
-    <?php include "isi.php"  ?>
+    <?php include "content.php"  ?>
 
      <!-- End main content area -->
     

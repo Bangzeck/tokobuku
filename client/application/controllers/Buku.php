@@ -2,10 +2,10 @@
 class Buku extends CI_Controller{
 var $API ="";
 function __construct() {
-parent::__construct();
-$this->API = "http://localhost:8080/tokobuku/client/index.php/api/";
-}
-// menampilkan data produk
+	parent::__construct();
+	$this->API = "http://localhost:8080/tokobuku/client/index.php/api/";
+	}	
+// menampilkan data buku
 function index(){
 $data['databuku'] =
 json_decode($this->curl->simple_get($this->API.'/buku'));
