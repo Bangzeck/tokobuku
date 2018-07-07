@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" name="viewport">
-  <title>Examples &rsaquo; Login &mdash; Stisla</title>
-
+  <title>Login Toko Buku</title>
   <link rel="stylesheet" href="<?php echo base_url()."assets/"?>css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url()."assets/"?>css/ionicons.min.css">
   <link rel="stylesheet" href="<?php echo base_url()."assets/"?>css/fontawesome-all.min.css">
@@ -67,9 +66,6 @@
             </div>
             <div class="mt-5 text-muted text-center">
               Don't have an account? <a href="register.html">Create One</a>
-            </div>
-            <div class="simple-footer">
-              Copyright &copy; Stisla 2018
             </div>
           </div>
         </div>

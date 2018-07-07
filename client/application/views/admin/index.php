@@ -17,14 +17,17 @@
    <div class="col-md-2 colmenu" style="padding:0;">
       <div class="col-md-12" style="padding:10px;"><center><img src="../assets/images/profil.jpg" alt="" height="100px" width="100px"></center></div>
       <div class="col-md-12" style="padding:5px;padding-bottom:10px;color:#fff;"><center>Heri Susanto</center></div>
-         <?php include "menu.php"; ?>  
+         <?php echo $menu; ?>  
    </div>
+
    <?php 
          if (isset($_GET['user'])) {
             echo $user;
          }
          else if(isset($_GET['listBuku'])){
             echo $listBuku;
+         }else if (isset($_GET['tambah'])) {
+            echo $tambah;
          }else{
             echo $home;
          }

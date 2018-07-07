@@ -2,7 +2,8 @@
 <ul>
    <li><a href='?home'><i class="fa fa-home fa-fw"></i>&nbsp; Home</a></li>
    <li><a href='?user'><i class="fa fa-users fa-fw"></i>&nbsp; Users</a></li>
-   <li><a href='?listBuku'><i class="fa fa-users fa-fw"></i>&nbsp; Users</a></li>
+   <li><a href='?tambah'><i class="fa fa-users fa-fw"></i>&nbsp; Tambah Buku</a></li>
+   <li><a href='?listBuku'><i class="fa fa-users fa-fw"></i>&nbsp; List Buku</a></li>
    <li class='active has-sub'><a href='#'><i class="fa fa-bars fa-fw"></i>&nbsp; Kategori</a>
       <ul>
          <li class='has-sub'><a href='#'><span>Elektronik</span></a>
