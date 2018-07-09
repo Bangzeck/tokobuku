@@ -1,7 +1,7 @@
 <div class="site-branding-area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="logo">
                         <h1><a href="./"><img src="<?php echo base_url()."assets/"?>img/logo.png"></a></h1>
                     </div>
@@ -12,6 +12,12 @@
                         <a href="cart.html"><span class="cart-amunt">Login</span></i> </a>
                     </div>
                 </div>
+                <div class="col-sm-2">
+                    <div class="shopping-item">
+                        <a href="<?php echo site_url('daftar');?>"><span class="cart-amunt">Sign Up</span></i> </a>
+                    </div>
+                </div>
+
 
             </div>
         </div>

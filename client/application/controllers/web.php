@@ -6,5 +6,10 @@ class Web extends CI_Controller {
 	public function index(){
 		$this->load->view("index");
 	}
+
+	public function daftar(){
+		
+		$this->load->view("daftar");
+	}
 	
 }

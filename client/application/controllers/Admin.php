@@ -2,17 +2,14 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
-
-	
+	var $API = "";
+	function __construct(){
+		parent::__construct();
+		$this->API = "http://localhost/tokobuku/server/index.php/api/";
+	}
 	public function index(){
-		$adm = array(
-			"user" => $this->load->view("admin/user",array(),true),
-			"menu" => $this->load->view("admin/menu",array(),true),
-			"home" => $this->load->view("admin/home",array(),true),
-			"listBuku" => $this->load->view("admin/listBuku",array(),true),
-			"tambah" => $this->load->view("admin/tambah",array(),true),
-	);
-		$this->load->view("admin/index",$adm);
+		
+		$this->load->view("admin/index");
 	}
 
 
@@ -20,6 +17,32 @@ class Admin extends CI_Controller {
 
 		$this->load->view("admin/login");
 	}
+
+	public function listBuku(){
+		$data['listbuku'] = json_decode($this->curl->simple_get($this->API.'buku'));
+		$this->load->view("admin/listBuku", $data);
+	}
+
+	public function user(){
+		
+		$this->load->view('admin/user');	
+	}
+	public function editBuku(){
+		
+		$this->load->view('admin/editBuku');	
+	}
+	public function tambahBuku(){
+		
+		$this->load->view('admin/tambahBuku');	
+	}
+	public function transaksi(){
+		
+		$this->load->view('admin/transaksi');	
+	}
+
+
+	
+
 
 
 

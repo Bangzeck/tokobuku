@@ -56,7 +56,7 @@
        <div class="col-md-10" style="padding:0px">
       <ol class="breadcrumb" style="margin:0;border-radius:0;">
          <li><a href="#">Home</a></li>
-         <li class="active">List Buku</li>
+         <li class="active">Tambah Buku</li>
       </ol>
    </div>
  <div class="col-md-10" style="min-height:600px">
@@ -66,59 +66,45 @@
             <div class="col-md-12">
 
 
-<table class="table table-bordered">
-               <thead>
-                  <th class="info">No</th>
-                  <th class="info">Id</th>
-                  <th class="info">Judul</th>
-                  <th class="info">Pengarang</th>
-                  <th class="info">Penerbit</th>
-                  <th class="info">Harga</th>
-                  <th class="info">Deskripsi</th>
-                  <th class="info" colspan="2">Action</th>
-               </thead>
 
-               <tbody>
-                  <?php if(isset($listbuku) and $listbuku):$i=1;
-                    foreach($listbuku as $row): ?>
-                  <tr>
-                    <td class="text-center"><?php echo $i; ?></td>
-                    <td><?php echo $row->id_buku; ?></td>
-                    <td><?php echo $row->judul; ?></td>
-                    <td><?php echo $row->pengarang; ?></td>
-                    <td><?php echo $row->penerbit; ?></td>
-                    <td><?php echo $row->harga; ?></td>
-                    <td><?php echo $row->deskripsi; ?></td>
-                    
-                    <td class="text-center">
-                      <div class="btn-group">
-
-                        <!-- <form action="<?php echo base_url().'index.php/buku/ubah/'.$row->id_buku; ?>" method="post">
-                           <button class="btn btn-sm btn-default" type="submit" name="submit"><i class="fas fa-pencil-alt"></i></button>
-                        </form>
-                        <form action="<?php echo base_url().'index.php/buku/hapus/'.$row->id_buku; ?>" method="post">
-                           <button class="btn btn-sm btn-default" type="submit" name="submit"><i class="fas fa-trash"></i></button>
-                        </form> -->
-                        
-                        <a title="Ubah" class="btn btn-sm btn-default" href="<?php echo base_url().'index.php/buku/ubah/'.$row->id_buku; ?>"><i class="fas fa-pencil-alt"></i></a>
-                        <a title="Hapus" class="btn btn-sm btn-default" href="<?php echo base_url().'index.php/buku/hapus/'.$row->id_buku; ?>"><i class="fas fa-trash"></i></a>
-                      </div>
-                    </td>
-                  </tr>
-                  <?php $i++; endforeach; endif; ?>
-                </tbody> 
-
-
-            </table>       
-
-
-
-
-
-
-
-
-
+         <form action="<?php echo base_url()."index.php/buku/tambah"; ?>" method="post" enctype="multipart/form-data">
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">Judul <span class="required">*</span></label>
+                        <div class="col-md-4">
+                            <input type="text" name="judul" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">pengarang</label>
+                        <div class="col-md-4">
+                            <input type="text" name="pengarang" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">penerbit</label>
+                        <div class="col-md-4">
+                            <input type="text" name="penerbit" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">harga</label>
+                        <div class="col-md-4">
+                            <input type="textr" name="harga" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 10px;">
+                        <label class="col-md-2">deskripsi</label>
+                        <div class="col-md-4">
+                            <input type="text" name="deskripsi" required="required" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button type="submit" name="submit" class="btn btn-success">Simpan</button>
+                            <a href="<?php echo site_url('admin?listBuku');?>" class="btn btn-primary">Kembali</a>
+                        </div>
+                    </div>
+                </form>
 
 
 

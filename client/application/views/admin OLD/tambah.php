@@ -39,7 +39,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <button type="submit" name="submit" class="btn btn-success">Simpan</button>
-                            <a href="<?php echo site_url('buku');?>" class="btn btn-primary">Kembali</a>
+                            <a href="<?php echo site_url('admin?listBuku');?>" class="btn btn-primary">Kembali</a>
                         </div>
                     </div>
                 </form>

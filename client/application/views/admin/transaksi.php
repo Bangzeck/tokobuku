@@ -54,7 +54,7 @@
        <div class="col-md-10" style="padding:0px">
       <ol class="breadcrumb" style="margin:0;border-radius:0;">
          <li><a href="#">Home</a></li>
-         <li class="active">Data User</li>
+         <li class="active">transaksi</li>
       </ol>
    </div>
  <div class="col-md-10" style="min-height:600px">
