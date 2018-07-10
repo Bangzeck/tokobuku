@@ -74,12 +74,6 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href=shop.php">Shop page</a></li>
-                        <li><a href="single-product.html">Single product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>  
             </div>
@@ -110,8 +104,8 @@
                     <div id="wrapper">
 
                         <div id="login" class="animate form">
-                            <form  action="<?php base_url('daftar');?>" method="post" autocomplete="on"> 
-                                <h1>DAFTAR</h1> 
+                            <form  action="<?php base_url('login');?>" method="post" autocomplete="on"> 
+                                <h1>LOGIN</h1> 
                                 <p> 
                                     <label for="nama" class="nama" data-icon="u" >Nama</label>
                                     <input id="nama" name="nama" required="required" type="text" placeholder="Mahdi Tavif"/>
@@ -121,15 +115,11 @@
                                     <input id="email" name="email" required="required" type="text" placeholder="Mahdilovers@gmail.com"/>
                                 </p>
                                 <p> 
-                                    <label for="username" class="uname" data-icon="u" >Username</label>
-                                    <input id="username" name="username" required="required" type="text" placeholder="Mahdi_Tavif"/>
-                                </p>
-                                <p> 
                                     <label for="password" class="youpasswd" data-icon="p">Password</label>
                                     <input id="password" name="password" required="required" type="password" placeholder="140451234dad" /> 
                                 </p>
                                 <p class="singup button"> 
-                                    <input type="submit" name="submit" value="singup" /> 
+                                    <input type="submit" name="submit" value="singin" /> 
                                 </p>
                             </form>
                         </div>
@@ -141,7 +131,6 @@
             </section>
         </div>
      </body>
-
 
 
 

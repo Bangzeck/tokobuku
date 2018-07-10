@@ -9,7 +9,7 @@
                 
                 <div class="col-sm-6">
                     <div class="shopping-item">
-                        <a href="cart.html"><span class="cart-amunt">Login</span></i> </a>
+                        <a href="<?php echo site_url('pembeli'); ?>"><span class="cart-amunt">Login</span></i> </a>
                     </div>
                 </div>
                 <div class="col-sm-2">

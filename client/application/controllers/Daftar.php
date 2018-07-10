@@ -5,7 +5,7 @@ class Daftar extends CI_Controller {
  public function __construct()
  {
   parent::__construct();
-  $this->load->model('MDaftar');
+  $this->load->models('MDaftar');
   $this->load->helper('form');
  }
 
