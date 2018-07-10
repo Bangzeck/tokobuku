@@ -73,11 +73,11 @@
 
 
 
-               <form action="<?php echo base_url()."index.php/buku/tambah"; ?>" method="post" enctype="multipart/form-data">
+               <form action="<?php echo base_url()."index.php/buku/ubah"; ?>" method="post" enctype="multipart/form-data">
                     <div class="row" style="padding-bottom: 10px;">
                         <label class="col-md-2">Judul <span class="required">*</span></label>
                         <div class="col-md-4">
-                            <input type="text" name="judul"  required="required" class="form-control col-md-8" />
+                            <input type="text" name="judul" value="<? echo $row->databuku->judul; ?>" required="required" class="form-control col-md-8" />
                         </div>
                     </div>
                     <div class="row" style="padding-bottom: 10px;">
